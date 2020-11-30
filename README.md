@@ -9,9 +9,9 @@ There are 3 levels you need to complete before you can finish the game.
 You have 3 strikes where you can let the ball slip out from the breaker hands like the original game.
 Any brick break will earn yourself 1 point and there are no time limit on any level.
 
-###Elements
+## Elements
 
-We have 3 types of Bricks:
+We have 3 types of Bricks which uses [Box Collider 2D](https://docs.unity3d.com/ScriptReference/BoxCollider2D.html) and [Particle System](https://docs.unity3d.com/ScriptReference/ParticleSystem.html) (existing on Ball) for scenery:
 
 Normal brick: ![](https://i.imgur.com/JHqhRzz.png) - this brick would break after 1 hit.
 
@@ -24,3 +24,24 @@ We have the ball which uses Ball-[Physics Material 2D](https://docs.unity3d.com/
 We also have the breaker(paddle) ![](https://i.imgur.com/SXKxjdx.png) which uses [Polygon Collider 2D](https://docs.unity3d.com/ScriptReference/PolygonCollider2D.html)
 
 And finally another Toggle button for audio-source to Pause/Play - ![](https://i.imgur.com/liU48mA.png)
+
+## Scripts
+
+We have 5 Scripts who helps operate the Brick Breaker:
+
+### BallScr
+The ball script who helps the ball with its Positioning and moving. also have [OnTriggerEnter2D](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnTriggerEnter2D.html) and [OnCollisionEnter2D](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnCollisionEnter2D.html) which deals with tags that operate Live decrease, brick destroy, Score increase and boundries
+### BreakerMover
+The Breaker (paddle) script who help with the boundries of the paddle and the Mouse movement
+### Brick Scr
+The Brick script who Decrese Brick Live if its a Brick with more then 1 hit to destroy and define new color after 1 hit.
+### GameStatus
+This Script helps with Scene Management and Configuring The info Bars (level,lives etc..)
+Also its responsable for button operation like "play again" And "Game Over"
+### Rotate
+This Script is for the Bricks Movement on level 2 and level 3 which uses Sinus function to Tilt left and right.
+
+## Game Link
+And of course, Brick Breaker is up and ready to play [Right here!](https://aviniv.itch.io/brickbreaker)
+
+### Hope you Like it! Niv & Avi!!
