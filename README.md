@@ -29,16 +29,16 @@ And finally another Toggle button for audio-source to Pause/Play - ![](https://i
 
 We have 5 Scripts who helps operate the Brick Breaker:
 
-### BallScr
+### [BallScr](https://github.com/Gamedev-Project/BrickBreaker/blob/main/Assets/Scripts/BallScr.cs)
 The ball script who helps the ball with its Positioning and moving. also have [OnTriggerEnter2D](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnTriggerEnter2D.html) and [OnCollisionEnter2D](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnCollisionEnter2D.html) which deals with tags that operate Live decrease, brick destroy, Score increase and boundries
-### BreakerMover
+### [BreakerMover](https://github.com/Gamedev-Project/BrickBreaker/blob/main/Assets/Scripts/BreakerMover.cs)
 The Breaker (paddle) script who help with the boundries of the paddle and the Mouse movement
-### Brick Scr
+### [Brick Scr](https://github.com/Gamedev-Project/BrickBreaker/blob/main/Assets/Scripts/BrickScr.cs)
 The Brick script who Decrese Brick Live if its a Brick with more then 1 hit to destroy and define new color after 1 hit.
-### GameStatus
+### [GameStatus](https://github.com/Gamedev-Project/BrickBreaker/blob/main/Assets/Scripts/GameStatus.cs)
 This Script helps with Scene Management and Configuring The info Bars (level,lives etc..)
 Also its responsable for button operation like "play again" And "Game Over"
-### Rotate
+### [Rotate](https://github.com/Gamedev-Project/BrickBreaker/blob/main/Assets/Scripts/Rotate.cs)
 This Script is for the Bricks Movement on level 2 and level 3 which uses Sinus function to Tilt left and right.
 
 ## Game Link
